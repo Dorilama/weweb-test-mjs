@@ -9,6 +9,6 @@
 		"@vueuse/core": "^9.13.0"
 	},
 	"devDependencies": {
-		"@weweb/cli": "latest"
+		"@weweb/cli": "github:Dorilama/weweb-cli#bcec855"
 	}
 }
