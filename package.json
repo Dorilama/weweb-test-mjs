@@ -1,0 +1,14 @@
+{
+	"name": "weweb-test-mjs",
+	"version": "0.0.1",
+	"scripts": {
+		"build": "weweb build --name=test --type=element",
+		"serve": "weweb serve"
+	},
+	"dependencies": {
+		"@vueuse/core": "^9.13.0"
+	},
+	"devDependencies": {
+		"@weweb/cli": "github:Dorilama/weweb-cli#bcec855"
+	}
+}
