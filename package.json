@@ -2,7 +2,7 @@
 	"name": "weweb-test-mjs",
 	"version": "0.0.1",
 	"scripts": {
-		"build": "weweb build --name=test --type=element",
+		"build": "weweb build",
 		"serve": "weweb serve"
 	},
 	"dependencies": {
