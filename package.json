@@ -2,13 +2,15 @@
 	"name": "weweb-test-mjs",
 	"version": "0.0.1",
 	"scripts": {
-		"build": "weweb build --name=test --type=element",
-		"serve": "weweb serve"
+		"build": "weweb build",
+		"serve": "weweb serve",
+		"postinstall": "patch-package"
 	},
 	"dependencies": {
 		"@vueuse/core": "^9.13.0"
 	},
 	"devDependencies": {
-		"@weweb/cli": "github:Dorilama/weweb-cli#bcec855"
+		"@weweb/cli": "3.6.0",
+		"patch-package": "^6.5.1"
 	}
 }

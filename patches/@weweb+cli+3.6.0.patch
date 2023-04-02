@@ -1,0 +1,32 @@
+diff --git a/node_modules/@weweb/cli/bin/controllers/build.js b/node_modules/@weweb/cli/bin/controllers/build.js
+index 92344ad..88361bb 100644
+--- a/node_modules/@weweb/cli/bin/controllers/build.js
++++ b/node_modules/@weweb/cli/bin/controllers/build.js
+@@ -139,6 +139,11 @@ exports.build = (name, type) => {
+                         test: /\.js$/,
+                         loader: "babel-loader",
+                     },
++                    {
++                        test: /\.mjs$/,
++                        include: /node_modules/,
++                        type: "javascript/auto"
++                    },
+                     // this will apply to both plain `.css` files
+                     // AND `<style>` blocks in `.vue` files
+                     {
+diff --git a/node_modules/@weweb/cli/webpack.dev.config.js b/node_modules/@weweb/cli/webpack.dev.config.js
+index 9b92d18..f541059 100644
+--- a/node_modules/@weweb/cli/webpack.dev.config.js
++++ b/node_modules/@weweb/cli/webpack.dev.config.js
+@@ -131,6 +131,11 @@ module.exports = function() {
+                     test: /\.js$/,
+                     loader: "babel-loader",
+                 },
++                {
++                    test: /\.mjs$/,
++                    include: /node_modules/,
++                    type: "javascript/auto"
++                },
+                 // this will apply to both plain `.css` files
+                 // AND `<style>` blocks in `.vue` files
+                 {
